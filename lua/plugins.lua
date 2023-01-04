@@ -50,7 +50,7 @@ packer.startup {
 
     use { "onsails/lspkind-nvim", event = "VimEnter" }
     -- auto-completion engine
-    use { "hrsh7th/nvim-cmp", after = "lspkind-nvim", config = [[require('config.nvim-cmp')]] }
+    -- use { "hrsh7th/nvim-cmp", after = "lspkind-nvim", config = [[require('config.nvim-cmp')]] }
 
     -- nvim-cmp completion sources
     use { "hrsh7th/cmp-nvim-lsp", after = "nvim-cmp" }

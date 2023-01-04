@@ -8,7 +8,7 @@ nvim_tree.setup {
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
-  open_on_setup = false,
+  open_on_setup = true,
   open_on_setup_file = false,
   open_on_tab = false,
   sort_by = "name",
@@ -27,6 +27,14 @@ nvim_tree.setup {
         -- user mappings go here
       },
     },
+    float = {
+        enable=true,
+        quit_on_focus_loss=false,
+        open_win_config={
+            width=60,
+            height=60
+        }
+    }
   },
   renderer = {
     indent_markers = {
